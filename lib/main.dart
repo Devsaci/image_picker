@@ -36,7 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_a_photo),
         onPressed: () {
-          var ad = AlertDialog();
+          var ad = AlertDialog(
+              title: Text("Chose Picture From "),
+            content: Container(
+              height: 150,
+              color: Colors.amber,
+            ),
+          );
           showDialog(
               context: context,
               builder: (BuildContext context) {
