@@ -37,10 +37,25 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.add_a_photo),
         onPressed: () {
           var ad = AlertDialog(
-              title: Text("Chose Picture From "),
+            title: Text("Chose Picture From "),
+
             content: Container(
               height: 150,
               color: Colors.amber,
+              child: Column(
+                children: [
+                  Divider(color: Colors.black, thickness: 3,),
+                  Container(
+                    width: 300,
+                    color: Colors.indigo,
+                    child: ListTile(
+                      leading: Icon(Icons.image,color: Colors.white,size: 40,),
+                      title: Text("Gallery"),
+                      onTap: (){},
+                    ),
+                  ),
+                ],
+              ),
             ),
           );
           showDialog(
@@ -48,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (BuildContext context) {
                 return ad;
               });
-          },
+        },
       ),
     );
   }
