@@ -38,23 +38,49 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           var ad = AlertDialog(
             title: Text("Chose Picture From "),
-
             content: Container(
-              height: 150,
-              color: Colors.amber,
+              height: 200,
               child: Column(
                 children: [
-                  Divider(color: Colors.black, thickness: 3,),
+                  Divider(
+                    color: Colors.black,
+                    thickness: 3,
+                  ),
                   Container(
-                    width: 300,
+                    width: 250,
                     color: Colors.indigo,
                     child: ListTile(
-                      leading: Icon(Icons.image,color: Colors.white,size: 40,),
+                      leading: Icon(
+                        Icons.image,
+                        color: Colors.white,
+                        size: 40,
+                      ),
                       title: Text("Gallery"),
-                      onTap: (){
+                      onTap: () {
                         Navigator.of(context).pop();
                       },
                     ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Container(
+                    width: 250,
+                    color: Colors.indigo,
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.add_a_photo,
+                        color: Colors.white,
+                        size: 40,
+                      ),
+                      title: Text("Camera"),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
                   ),
                 ],
               ),
