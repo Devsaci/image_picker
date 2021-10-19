@@ -51,7 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListTile(
                       leading: Icon(Icons.image,color: Colors.white,size: 40,),
                       title: Text("Gallery"),
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.of(context).pop();
+                      },
                     ),
                   ),
                 ],
