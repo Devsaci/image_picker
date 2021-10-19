@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     thickness: 3,
                   ),
                   Container(
-                    width: 250,
+                    // width: 250,
                     color: Colors.indigo,
                     child: ListTile(
                       leading: Icon(
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 15,
                   ),
                   Container(
-                    width: 250,
+                    // width: 250,
                     color: Colors.indigo,
                     child: ListTile(
                       leading: Icon(
