@@ -31,7 +31,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("109. Image Picker"),
       ),
       body: const Center(
-        child: Text("Image Picker"),
+        child: Text("No Image selected"),
+      ),
+      floatingActionButton:  const FloatingActionButton(
+          child: Icon(Icons.add_a_photo),
+          onPressed:  null,
       ),
     );
   }
