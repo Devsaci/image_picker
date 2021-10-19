@@ -33,9 +33,16 @@ class _MyHomePageState extends State<MyHomePage> {
       body: const Center(
         child: Text("No Image selected"),
       ),
-      floatingActionButton:  const FloatingActionButton(
-          child: Icon(Icons.add_a_photo),
-          onPressed:  null,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add_a_photo),
+        onPressed: () {
+          var ad = AlertDialog();
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return ad;
+              });
+          },
       ),
     );
   }
